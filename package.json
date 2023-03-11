@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm install",  
+    "build": "npm install",
     "start": "node ./app.js",
     "devstart": "nodemon ./app.js"
   },
@@ -28,6 +28,7 @@
     "morgan": "^1.10.0",
     "passport": "^0.6.0",
     "passport-local": "^1.0.0",
+    "path": "^0.12.7",
     "request": "^2.88.2"
   },
   "devDependencies": {
