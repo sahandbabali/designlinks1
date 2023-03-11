@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const createError = require("http-errors");
-const path = require("path");
+// const path = require("path");
 const cookieParser = require("cookie-parser");
 const session = require("express-session");
 const logger = require("morgan");
