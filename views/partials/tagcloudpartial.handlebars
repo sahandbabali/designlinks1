@@ -1,0 +1,17 @@
+<div class="card mt-3">
+  <div class="card-header">
+    Tag Cloud
+  </div>
+  <div class="card-body" id="tagcloud">
+    {{#alltags}}
+
+      <a href="/tag/{{tagtitle}}"><button
+          type="button"
+          class="m-1 btn btn-secondary"
+        >
+          {{tagtitle}}
+          <span class="badge text-bg-secondary">{{count}}</span>
+        </button></a>
+    {{/alltags}}
+  </div>
+</div>

@@ -1,0 +1,73 @@
+
+
+  <!-- nav end -->
+
+  <div class="row mb-2">
+    <div class="col-12 col-lg-8 col-sm-12"><h3>Latest Links</h3>
+        <h5>{{numberofdocs}} Results</h5>
+
+</div>
+    <div class="col-12 col-lg-4 col-sm-12">
+      {{!-- <div class="input-group">
+        <select
+          class="form-select"
+          id="inputGroupSelect04"
+          aria-label="Example select with button addon"
+        >
+          <option selected value="1">Date ascending</option>
+          <option value="2">Date ascending</option>
+        </select>
+        <select
+          class="form-select"
+          id="inputGroupSelect04"
+          aria-label="Example select with button addon"
+        >
+          <option selected value="0">All</option>
+
+          <option value="1">YouTube</option>
+          <option value="2">Articles</option>
+          <option value="3">Resources</option>
+        </select>
+
+        <button class="btn btn-outline-secondary" type="button">
+          Filter
+        </button>
+      </div> --}}
+    </div>
+  </div>
+
+  <div id="results">
+    {{#alllinks}}
+
+      <div class="card">
+        <div class="card-body row">
+          <div class="col-12 col-lg-8 col-sm-12 p-1"><a
+              target="_blank"
+              href="{{url}}"
+            >{{title}}</a></div>
+          <div class="col-12 col-lg-3 col-sm-12 p-1">
+            {{#tags}}
+              <a href="/tag/{{this}}"><span class="badge text-bg-primary">{{this}} </span></a>
+            {{/tags}}</div>
+          <div class="col-12 col-lg-1 col-sm-12 p-1"><img
+              src="/{{platform}}.png"
+              alt=""
+            /></div>
+        </div>
+      </div>
+
+    {{/alllinks}}
+  </div>
+
+  <a
+    id="nextpagebtn"
+    class="btn btn-primary mt-2"
+    href="?page={{page}}"
+    role="button"
+  >Next page</a>
+
+ {{> tagcloudpartial}}
+
+</div>
+
+<script defer src="./app1.js"></script>

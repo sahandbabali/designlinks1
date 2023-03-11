@@ -1,0 +1,51 @@
+
+
+  <!-- nav end -->
+
+  <form id="verifyform" action="/addnew" method="post">
+    <div class="mb-3">
+      <label for="linktitle" class="form-label">Link Title</label>
+      <input name="title" type="text" class="form-control" id="linktitle" />
+    </div>
+    <div class="mb-3">
+      <label for="linkurl" class="form-label">Link URL</label>
+      <input name="url" type="url" class="form-control" id="linkurl" />
+    </div>
+
+    <div class="mb-3">
+      <label for="selectplatform" class="form-label">Platfrom</label>
+
+      <select
+        name="platform"
+        id="selectplatform"
+        class="form-select"
+        aria-label="Default select example"
+      >
+        <option selected> Select a platform</option>
+        <option value="youtube">YouTube</option>
+        <option value="podcast">Podcast</option>
+        <option value="article">Article</option>
+        <option value="resource">Resource</option>
+
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label for="linktags" class="form-label">Link tags</label>
+      <input name="tags" type="text" class="form-control" id="linktags" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+
+{{> tagcloudpartial}}
+
+
+
+
+
+
+
+
+<script defer src="./app1.js"></script>

@@ -1,0 +1,20 @@
+Todo:
+ui changes - next button
+
+=========================================================
+Done:
+authentication
+tag functionality - tag directory
+add tagcloud to other relevant pages
+add number of results to index and tags pages
+use dot env
+
+
+==========================================================
+
+add dashboard - for approving pending links and ...
+add captcha
+validation for form
+Set NODE_ENV to 'production'
+Use gzip/deflate compression for responses
+Use Helmet to protect against well known vulnerabilities
